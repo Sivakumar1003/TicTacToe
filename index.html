@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tic Tac Toe</title>
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gochi+Hand" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Tic Tac Toe</h1>
+        </div>
+
+        <div id="settings">
+            <div class="title">
+                Who are you?
+            </div>
+            <div><i class="fas fa-times fa-4x pointer" onclick="selectPlay('x')"></i></div>
+            <div><i class="far fa-circle pointer" onclick="selectPlay('o')"></i></div>
+        </div>
+
+        <div id="gameBoard">
+            <div id="whoseTurn">
+                <p><span id="currPlayer">X</span>'s turn</p>
+            </div>
+            <table id="grid">
+                <tr>
+                    <td id="0" class="pointer" onClick="handleClick(this)"></td>
+                    <td id="1" class="pointer" onClick="handleClick(this)"></td>
+                    <td id="2" class="pointer" onClick="handleClick(this)"></td>
+                </tr>
+                <tr>
+                    <td id="3" class="pointer" onClick="handleClick(this)"></td>
+                    <td id="4" class="pointer" onClick="handleClick(this)"></td>
+                    <td id="5" class="pointer" onClick="handleClick(this)"></td>
+                </tr>
+                <tr>
+                    <td id="6" class="pointer" onClick="handleClick(this)"></td>
+                    <td id="7" class="pointer" onClick="handleClick(this)"></td>
+                    <td id="8" class="pointer" onClick="handleClick(this)"></td>
+                </tr>
+            </table>
+
+            <div id="restart" class="pointer" onclick="restart()">
+                <p>I want to restart!</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        Thank You for visting my page
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
